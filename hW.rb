@@ -61,11 +61,11 @@ def metro(startLine,startStation,line2,endStation)
         puts "\nTotal stops between stations are #{first_line+second_line+1}" end
 end
 puts "Enter the line you are at"
-startLine = gets.chomp.to_str
+startLine = gets.chomp
 puts "Enter the stop you are at"
-startStation = gets.chomp.to_str
+startStation = gets.chomp
 puts "Enter the line you are going to"
-endLine = gets.chomp.to_str
+endLine = gets.chomp
 puts "Enter the stop you are going to"
-endStation = gets.chomp.to_str
+endStation = gets.chomp
 metro(startLine,startStation,line2,endStation)
