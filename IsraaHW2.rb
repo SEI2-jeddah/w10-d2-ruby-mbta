@@ -58,7 +58,6 @@ class SubWay
                     elsif tmpArray1.index(startStop) > tmpArray1.index(endStop)
                         startarr = (tmpArray1.index(endStop).to_i .. tmpArray1.index(startStop).to_i).to_a.reverse()
                         startarrnames= loppfun(startarr,startarrnames,tmpArray1)
-                        
     
                     else
                         startarr = (tmpArray1.index(startStop).to_i .. tmpArray1.index(endStop).to_i).to_a
@@ -68,11 +67,11 @@ class SubWay
                     if tmpArray1.index(startStop) > tmpArray1.index("Park Street")
                         startarr = (tmpArray1.index("Park Street").to_i .. tmpArray1.index(startStop).to_i).to_a.reverse()
                         startarrnames= loppfun(startarr,startarrnames,tmpArray1)
-                        startarrnames.reverse()
                     else
                         startarr = (tmpArray1.index(startStop).to_i .. tmpArray1.index("Park Street").to_i).to_a
                         startarrnames= loppfun(startarr,startarrnames,tmpArray1)
                     end
+
                     if tmpArray2.index(endStop) > tmpArray2.index("Park Street")
                         startarr = (tmpArray2.index("Park Street").to_i .. tmpArray2.index(endStop).to_i).to_a
                         endarrnames= loppfun(startarr,endarrnames,tmpArray2)
